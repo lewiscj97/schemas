@@ -67,7 +67,7 @@ Support:
     If you have any questions, please contact INSERT on EMAIL / SLACK. We can help with INSERT. If you have a general enquiry, contact INSERT instead.
 Further Info:
   <<: *field_properties
-  check_spelling: false test
+  check_spelling: false
   required: false
   default_value: |
     EXAMPLE ONLY:
