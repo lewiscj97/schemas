@@ -1,0 +1,33 @@
+# Config for business_overview template
+field_properties: &field_properties
+  max_word_count: 500
+  min_word_count: 20
+  check_spelling: true
+
+file_properties:
+  min_word_count: 100
+  prohibited:
+    banned: '<iframe(\s[^>]*)*>'
+    limited: '<img[^>]+src=["|'']?((http)s?(:\/\/)(www\.)|((http)s?(:\/\/)(?!www\.))|(www\.))[a-z|A-Z|0-9]+(\.)[^>]+>, <video[^>]+src=["|'']?((http)s?(:\/\/)(www\.)|((http)s?(:\/\/)(?!www\.))|(www\.))[a-z|A-Z|0-9]+(\.)[^>]+>'
+    allowlist:
+      - ''
+
+Overview:
+  <<: *field_properties
+  required: true
+  min_word_count: 20
+Use Cases:
+  <<: *field_properties
+  required: false
+Data Provided:
+  <<: *field_properties
+  required: false
+Useful Resources:
+  <<: *field_properties
+  required: false
+Getting Started:
+  <<: *field_properties
+  required: false
+Support:
+  <<: *field_properties
+  required: false
