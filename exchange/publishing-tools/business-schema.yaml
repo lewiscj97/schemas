@@ -1,6 +1,6 @@
 # Config for business_overview template
 field_properties: &field_properties
-  max_word_count: 500 test
+  max_word_count: 500
   min_word_count: 20
   check_spelling: true
 
